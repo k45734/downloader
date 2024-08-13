@@ -29,7 +29,7 @@ try:
     from pikpakapi import PikPakApi
     from pikpakapi.PikpakException import PikpakException, PikpakAccessTokenExpireException
 except ImportError:
-    os.system("{} install pikpakapi".format(app.config['config']['pip']))
+    os.system("{} install pikpakapi==0.0.6 -i https://pypi.org/simple".format(app.config['config']['pip']))
     from pikpakapi import PikPakApi
     from pikpakapi.PikpakException import PikpakException, PikpakAccessTokenExpireException
 
